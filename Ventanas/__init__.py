@@ -1,2 +1,2 @@
 #
-print "Esto es una clase de control"
+print "Esto es una clase de ventanas  "
