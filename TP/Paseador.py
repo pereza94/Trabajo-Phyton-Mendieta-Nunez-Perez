@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 16 15:51:13 2015
+Created on  Wed   Sep 16 15:51:13 2015
 
-@author: Alejandro
+@author: Alejandro    
 """
 
 class Paseador(object):
