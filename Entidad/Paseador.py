@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on  Wed   Sep 16 15:51:13 2015
 
-@author: Alejandro    
-"""
 
 class Paseador(object):
     def __init__(self,pApellido=None,pNombre=None,pDNI=None,pTelefono=None):

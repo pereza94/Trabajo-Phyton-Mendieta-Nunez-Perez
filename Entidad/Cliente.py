@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created  on Wed Sep 16 15:28:33 2015
 
-@author: Alejandro
-"""
 
-class Duenio(object):
+class Cliente(object):
     
         def __init__(self,dApellido=None,dNombre=None,dDireccion=None,dDNI=None,dTelefono=None):
             self.__dApellido=dApellido
@@ -52,23 +48,23 @@ class Duenio(object):
         
        
         
-class PruebaDuenio(object):
-    import Duenio
-    lista_duenio = []
+class PruebaCliente(object):
+    import Cliente
+    lista_cliente = []
          
-    d1=Duenio
+    d1=Cliente
     d1.set_dApellido= "Garcia"
     d1.set_dNombre = "Francisco"
     d1.set_dDireccion= "Alvear y Gouchon"
     d1.set_dTelefono= "03447-15432211"
-    lista_duenio.append(d1)
+    lista_cliente.append(d1)
         
-    d2=Duenio
+    d2=Cliente
     d2.set_dApellido= "PiedraBuena"
     d2.set_dNombre = "Roberto"
     d2.set_dDireccion= "J.J Paso 213"
     d2.set_dTelefono= "03447-1543450"
-    lista_duenio.append(d2)
+    lista_cliente.append(d2)
         
     '''   d3=Duenio
     d3.__dApellido= "Ciano"
@@ -91,8 +87,8 @@ class PruebaDuenio(object):
     d5.__dTelefono= "03447-15455567"
     lista_duenio.append(d5)
     '''
-    d=Duenio
-    for d in lista_duenio:
+    d=Cliente
+    for d in lista_cliente:
        print d.get_dNombre()
       
    

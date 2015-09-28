@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created  on Wed  Sep 16 15:07:56 2015
 
-@author: Alejandro
-"""
 
 class Mascotas(object):
     def __init__(self,MNombre=None,MRaza=None,MPeso=None,MCodMascota=None):
