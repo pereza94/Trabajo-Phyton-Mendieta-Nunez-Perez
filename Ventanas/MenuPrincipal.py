@@ -20,8 +20,8 @@ class MenuPrincipal(wx.Frame):
               parent=prnt, pos=wx.Point(341, 91), size=wx.Size(750, 550),
               style=wx.DEFAULT_FRAME_STYLE, title=u'Menu Principal')
         self.SetClientSize(wx.Size(742, 519)) 
-        self.SetIcon(wx.Icon(u'C:/Users/GERARDO/Desktop/Maxi/Python PDFs/Trabajo Final/pie_Icono.ico',wx.BITMAP_TYPE_ICO))
-                            #C:\Users\GERARDO\Documents\Python Scripts\Trabajos-Curso\Trabajo-Phyton-Mendieta-Nunez-Perez\Imagenes
+        self.SetIcon(wx.Icon(u'C:/Users/Win7Ultimate/Documents/Python Scripts/Trabajo-Phyton-Mendieta-Nunez-Perez/Imagenes/pie_Icono.ico',wx.BITMAP_TYPE_ICO))
+                            
         self.SetFont(wx.Font(8, wx.SWISS, wx.NORMAL, wx.BOLD, False,
               u'Verdana'))
 
@@ -30,7 +30,7 @@ class MenuPrincipal(wx.Frame):
               style=wx.TAB_TRAVERSAL)
 
         self.BotonCliente = wx.Button(id=wxID_MENUPRINCIPALBOTONCLIENTE,
-              label=u'Cliente', name=u'BotonCliente', parent=self.panel1,
+              label=u'Cliente/Mascotas', name=u'BotonCliente', parent=self.panel1,
               pos=wx.Point(488, 104), size=wx.Size(144, 64), style=0)
         self.BotonCliente.SetFont(wx.Font(8, wx.SWISS, wx.NORMAL, wx.BOLD,
               False, u'Verdana'))
@@ -74,7 +74,7 @@ class MenuPrincipal(wx.Frame):
               u'Tahoma'))
         
         '--IMAGEN DEL PASEADOR---'
-        self.staticBitmap1 = wx.StaticBitmap(bitmap=wx.Bitmap(u'C:/Users/GERARDO/Desktop/Maxi/Python PDFs/Trabajo Final/Paseador-de-perros.png',
+        self.staticBitmap1 = wx.StaticBitmap(bitmap=wx.Bitmap(u'C:/Users/Win7Ultimate/Documents/Python Scripts/Trabajo-Phyton-Mendieta-Nunez-Perez/Imagenes/Paseador-de-perros.png',
               wx.BITMAP_TYPE_PNG), id=wxID_MENUPRINCIPALSTATICBITMAP1,
               name='staticBitmap1', parent=self.panel1, pos=wx.Point(24, 80),
               size=wx.Size(386, 400), style=0)
@@ -87,7 +87,7 @@ class MenuPrincipal(wx.Frame):
         self._init_ctrls(parent)
 
     def OnBotonClienteButton(self, event):
-        event.Skip()
+      event.Skip()
 
     def OnBotonPaseadorButton(self, event):
         event.Skip()
