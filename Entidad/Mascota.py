@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-class Mascotas(object):
+class Mascota(object):
     def __init__(self,MNombre=None,MRaza=None,MPeso=None,MCodMascota=None):
         self.__MNombre=MNombre
         self.__MRaza=MRaza
@@ -36,7 +36,42 @@ class Mascotas(object):
             self.__MCodMascota=nCodMascota 
  
 
-            
+class Prueba_mascota(object):
+    def cargar_Mascotas():
+        lista_mascotas = []
+             
+        m1= Mascota()
+        m1.set_MNombre("Manchita")
+        m1.set_MRaza("Pichichen")
+        m1.set_MPeso(7)
+        m1.set_MCodMascota(1)
+        lista_mascotas.append(m1)
+        
+        m2= Mascota()
+        m2.set_MNombre("Dalton")
+        m2.set_MRaza("Golden")
+        m2.set_MPeso(10)
+        m2.set_MCodMascota(2)
+        lista_mascotas.append(m2)
+       
+        m3= Mascota()
+        m3.set_MNombre("Simon")
+        m3.set_MRaza("Boxer")
+        m3.set_MPeso(13)
+        m3.set_MCodMascota(3)
+        lista_mascotas.append(m3)      
+        
+        m4= Mascota()
+        m4.set_MNombre("Anita")
+        m4.set_MRaza("Pointer")
+        m4.set_MPeso(4)
+        m4.set_MCodMascota(4)
+        lista_mascotas.append(m4)  
+        
+        m=Mascota()
+        for m in lista_mascotas:
+           print m.get_dNombre()
+        return lista_mascotas       
             
         
         
