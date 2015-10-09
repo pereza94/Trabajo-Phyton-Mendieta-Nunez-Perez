@@ -152,7 +152,7 @@ class MenuClienteMascota(wx.Dialog):
         self.comboBox1 = wx.ComboBox(choices=["Pointer", "Bulldog",
               "Bull Terrie", "Boxer", "Collie", "Dalmata", "Dogo", "Doberman",
               "Fox Terrier", "Golden", "Pastor Aleman", "Rottweiler", "Setter",
-              "Pit bull" ], id=wxID_MENUCLIENTEMASCOTACOMBOBOX1,
+              "Pit bull","Pichichen" ], id=wxID_MENUCLIENTEMASCOTACOMBOBOX1,
               name='comboBox1', parent=self.panel1, pos=wx.Point(432, 104),
               size=wx.Size(160, 21), style=0, value=u'Seleccione la raza..')
         self.comboBox1.SetLabel(u'Seleccione la raza..')
