@@ -1,6 +1,17 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 28 21:06:21 2015
+
+@author: Win7Ultimate
+"""
 
 import wx
+import MenuClienteMascota
+
+
+
+
+
 
 
 def create(parent):
@@ -58,6 +69,8 @@ class MenuPrincipal(wx.Frame):
               pos=wx.Point(648, 480), size=wx.Size(75, 23), style=0)
         self.BotonSalir.SetFont(wx.Font(8, wx.SWISS, wx.NORMAL, wx.BOLD, False,
               u'Verdana'))
+        self.BotonSalir.Bind(wx.EVT_BUTTON, self.OnBotonSalirButton,
+              id=wxID_MENUPRINCIPALBOTONSALIR)
 
         self.TituloPrincipal = wx.StaticText(id=wxID_MENUPRINCIPALTITULOPRINCIPAL,
               label=u'AGENCIA DE PASEO DE MASCOTAS', name=u'TituloPrincipal',
@@ -87,10 +100,18 @@ class MenuPrincipal(wx.Frame):
         self._init_ctrls(parent)
 
     def OnBotonClienteButton(self, event):
-      event.Skip()
+       ventana = MenuClienteMascota.create(self)
+       ventana.ShowModal()
 
     def OnBotonPaseadorButton(self, event):
         event.Skip()
+        
+    def OnBotonSalirButton(self, event):
+        mensaje = wx.MessageDialog(self,'¿Esta seguro que dsea salir?','Cuidado',wx.YES_NO);
+        mensaje.ShowModal()
+        mensaje.Destroy()
+        event.Skip()
+        
 
 
 if __name__ == '__main__':
