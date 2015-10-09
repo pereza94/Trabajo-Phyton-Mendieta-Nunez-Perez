@@ -7,7 +7,7 @@ Created on Mon Sep 28 21:06:21 2015
 
 import wx
 import MenuClienteMascota
-
+import os
 
 
 
@@ -31,8 +31,9 @@ class MenuPrincipal(wx.Frame):
               parent=prnt, pos=wx.Point(341, 91), size=wx.Size(750, 550),
               style=wx.DEFAULT_FRAME_STYLE, title=u'Menu Principal')
         self.SetClientSize(wx.Size(742, 519)) 
-        self.SetIcon(wx.Icon('C:\Users\Alejandro\Google Drive\Facultad\Curso Phyton\Trabajo-Phyton-Mendieta-Nunez-Perez_2\Imagenes\Paseador-de-perras.png',wx.BITMAP_TYPE_ICO))
-                            
+        "self.SetIcon(wx.Icon('C:\Users\Alejandro\Google Drive\Facultad\Curso Phyton\Trabajo-Phyton-Mendieta-Nunez-Perez_2\Imagenes\Paseador-de-perras.png',wx.BITMAP_TYPE_ICO))"
+        self.SetIcon(wx.Icon(os.getcwd() + '\\Imagenes\\pie_Icono.ico',wx.BITMAP_TYPE_ICO))      
+              
         self.SetFont(wx.Font(8, wx.SWISS, wx.NORMAL, wx.BOLD, False,
               u'Verdana'))
 
@@ -87,8 +88,9 @@ class MenuPrincipal(wx.Frame):
               u'Tahoma'))
         
         '--IMAGEN DEL PASEADOR---'
-        self.staticBitmap1 = wx.StaticBitmap(bitmap=wx.Bitmap('C:\Users\Alejandro\Google Drive\Facultad\Curso Phyton\Trabajo-Phyton-Mendieta-Nunez-Perez_2\Imagenes\pie_Icono.ico',
-              wx.BITMAP_TYPE_PNG), id=wxID_MENUPRINCIPALSTATICBITMAP1,
+        "self.staticBitmap1 = wx.StaticBitmap(bitmap=wx.Bitmap('C:\Users\Alejandro\Google Drive\Facultad\Curso Phyton\Trabajo-Phyton-Mendieta-Nunez-Perez_2\Imagenes\pie_Icono.ico',"
+        self.staticBitmap1 = wx.StaticBitmap(bitmap=wx.Bitmap(os.getcwd() + u'\\Imagenes\\Paseador-de-perros.png',     
+             wx.BITMAP_TYPE_PNG), id=wxID_MENUPRINCIPALSTATICBITMAP1,
               name='staticBitmap1', parent=self.panel1, pos=wx.Point(24, 80),
               size=wx.Size(386, 400), style=0)
         self.staticBitmap1.SetToolTipString(u'staticBitmap1')
