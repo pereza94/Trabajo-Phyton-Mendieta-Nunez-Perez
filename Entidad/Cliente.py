@@ -48,7 +48,7 @@ class Cliente(object):
         
        
         
-class PruebaCliente(object):
+class Prueba_cliente(object):
     def cargar_Clientes():
         lista_cliente = []
              
@@ -87,8 +87,6 @@ class PruebaCliente(object):
         d5.set_dTelefono= ("03447-15455567")
         lista_cliente.append(d5)
         
-        d=Cliente
-        for d in lista_cliente:
-           print d.get_dNombre()
+        
         return lista_cliente
    
