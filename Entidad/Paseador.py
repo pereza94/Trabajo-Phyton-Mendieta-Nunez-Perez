@@ -33,3 +33,32 @@ class Paseador(object):
         def set_pTelefono(self,nuevoTelefono):
             """modifica el telefono del paseador"""
             self.pTelefono=nuevoTelefono
+            
+class Prueba_cliente(object):
+    def cargar_Clientes():
+        lista_paseadores = []
+             
+        p1 = Paseador()
+        p1.set_pApellido("Gomez")
+        p1.set_pNombre("Fernando")
+        p1.set_pDNI("35.123.112")
+        lista_paseadores.append(p1)
+          
+        
+        p2 = Paseador()
+        p2.set_pApellido("Perez")
+        p2.set_pNombre("Roberto")
+        p2.set_pDNI("35.123.223")
+        lista_paseadores.append(p2)
+        
+        p3 = Paseador()
+        p3.set_pApellido("Correa")
+        p3.set_pNombre("Hernan")
+        p3.set_pDNI("32.444.000")
+        lista_paseadores.append(p3)
+        
+        return lista_paseadores
+            
+       
+        
+                  
