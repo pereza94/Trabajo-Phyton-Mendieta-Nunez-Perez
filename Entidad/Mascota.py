@@ -68,9 +68,31 @@ class Prueba_mascota(object):
         m4.set_MCodMascota(4)
         lista_mascotas.append(m4)  
         
+        m5= Mascota()
+        m5.set_MNombre("Corbata")
+        m4.set_MRaza("Collie")
+        m4.set_MPeso(5)
+        m4.set_MCodMascota(5)
+        lista_mascotas.append(m5)  
+        
+        m6= Mascota()
+        m6.set_MNombre("Socrates")
+        m6.set_MRaza("Dalmata")
+        m6.set_MPeso(6)
+        m6.set_MCodMascota(6)
+        lista_mascotas.append(m6) 
+        
+        m7= Mascota()
+        m7.set_MNombre("Pancho")
+        m7.set_MRaza("Bull Terrie")
+        m7.set_MPeso(7)
+        m7.set_MCodMascota(7)
+        lista_mascotas.append(m7) 
+       
+       
         m=Mascota()
         for m in lista_mascotas:
-           print m.get_dNombre()
+           print m.get_MNombre()
         return lista_mascotas       
             
         
