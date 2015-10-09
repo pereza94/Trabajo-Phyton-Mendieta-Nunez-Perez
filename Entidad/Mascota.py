@@ -2,11 +2,12 @@
 
 
 class Mascota(object):
-    def __init__(self,MNombre=None,MRaza=None,MPeso=None,MCodMascota=None):
+    def __init__(self,MNombre=None,MRaza=None,MPeso=None,MCodMascota=None,MDuenio=None):
         self.__MNombre=MNombre
         self.__MRaza=MRaza
         self.__MPeso=MPeso
         self.__MCodMascota=MCodMascota
+        self.__MDuenio=MDuenio
         
         
         def get_MNombre(self):
