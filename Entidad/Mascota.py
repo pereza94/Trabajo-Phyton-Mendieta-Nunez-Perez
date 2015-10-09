@@ -32,8 +32,8 @@ class Mascotas(object):
             """Modifica el peso de una mascota"""
             self.__MPeso=npeso
         def set_MCodMascota(self,nCodMascota):
-            """Modifica el codigo de una mascota"""
-            self.__MCodMascota=nCodMascota
+            """Modifica el codigo de una mascotA"""
+            self.__MCodMascota=nCodMascota 
  
 
             
