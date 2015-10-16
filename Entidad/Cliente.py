@@ -57,6 +57,7 @@ class Prueba_cliente(object):
         d1.set_dNombre ("Francisco")
         d1.set_dDireccion ("Alvear y Gouchon")
         d1.set_dTelefono ("03447-15432211")
+        d1.set_dDNI("1")
         lista_cliente.append(d1)
           
         d2=Cliente()
@@ -64,6 +65,7 @@ class Prueba_cliente(object):
         d2.set_dNombre ("Roberto")
         d2.set_dDireccion("J.J Paso 213")
         d2.set_dTelefono("03447-1543450")
+        d2.set_dDNI("2")
         lista_cliente.append(d2)
             
         d3=Cliente()
@@ -71,6 +73,7 @@ class Prueba_cliente(object):
         d3.set_dNombre  ("Omar")
         d3.set_dDireccion("M. Fernandez 009")
         d3.set_dTelefono( "03447-15401256")
+        d3.set_dDNI("3")
         lista_cliente.append(d3)
             
         d4=Cliente()
@@ -78,6 +81,7 @@ class Prueba_cliente(object):
         d4.set_dNombre("Eddy")
         d4.set_dDireccion( "San Martin 92")
         d4.set_dTelefono("03447-15456788")
+        d4.set_dDNI("4")
         lista_cliente.append(d4)
             
         d5=Cliente()
@@ -85,6 +89,7 @@ class Prueba_cliente(object):
         d5.set_dNombre ("Aitor")
         d5.set_dDireccion("Las Acacias 14")
         d5.set_dTelefono= ("03447-15455567")
+        d5.set_dDNI("5")
         lista_cliente.append(d5)
         
         
