@@ -8,6 +8,7 @@ Created on Mon Sep 28 21:06:21 2015
 import wx
 import MenuClienteMascota
 import MenuConsultas
+import MenuPaseador
 import os
 
 
@@ -101,7 +102,6 @@ class MenuPrincipal(wx.Frame):
         self.staticBitmap1.SetAutoLayout(False)
 
     def __init__(self, parent):
-        print 'aca'
         self._init_ctrls(parent)
 
     def OnBotonClienteButton(self, event):
@@ -109,18 +109,18 @@ class MenuPrincipal(wx.Frame):
        ventana.ShowModal()
 
     def OnBotonPaseadorButton(self, event):
-        event.Skip()
+        ventana3 = MenuPaseador.create(self)
+        ventana3.ShowModal()
         
     def OnBotonConsultasButton(self, event):
         ventana2 = MenuConsultas.create(self)
-        ventana2.ShowModal()        
+        ventana2.ShowModal()  
+        
     def OnBotonSalirButton(self, event):
         mensaje = wx.MessageDialog(self,'¿Esta seguro que dsea salir?','Cuidado',wx.YES_NO);
         mensaje.ShowModal()
         mensaje.Destroy()
         event.Skip()
-        
-
 
 if __name__ == '__main__':
     app = wx.PySimpleApp()
