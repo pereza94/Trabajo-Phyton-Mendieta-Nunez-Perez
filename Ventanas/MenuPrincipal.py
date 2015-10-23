@@ -7,6 +7,7 @@ Created on Mon Sep 28 21:06:21 2015
 
 import wx
 import MenuClienteMascota
+import MenuConsultas
 import os
 
 
@@ -64,6 +65,8 @@ class MenuPrincipal(wx.Frame):
               pos=wx.Point(488, 344), size=wx.Size(144, 64), style=0)
         self.BotonConsultas.SetFont(wx.Font(8, wx.SWISS, wx.NORMAL, wx.BOLD,
               False, u'Verdana'))
+        self.BotonConsultas.Bind(wx.EVT_BUTTON, self.OnBotonConsultasButton,
+              id=wxID_MENUPRINCIPALBOTONCONSULTAS)     
 
         self.BotonSalir = wx.Button(id=wxID_MENUPRINCIPALBOTONSALIR,
               label=u'Salir', name=u'BotonSalir', parent=self.panel1,
@@ -108,6 +111,9 @@ class MenuPrincipal(wx.Frame):
     def OnBotonPaseadorButton(self, event):
         event.Skip()
         
+    def OnBotonConsultasButton(self, event):
+        ventana2 = MenuConsultas.create(self)
+        ventana2.ShowModal()        
     def OnBotonSalirButton(self, event):
         mensaje = wx.MessageDialog(self,'¿Esta seguro que dsea salir?','Cuidado',wx.YES_NO);
         mensaje.ShowModal()
