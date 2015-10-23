@@ -106,6 +106,8 @@ class MenuPaseador(wx.Dialog):
         self.BotonAtras = wx.Button(id=wxID_MENUPASEADORBOTONATRAS,
               label=u'Atras', name=u'BotonAtras', parent=self.panel1,
               pos=wx.Point(24, 392), size=wx.Size(75, 23), style=0)
+        self.BotonAtras.Bind(wx.EVT_BUTTON, self.OnBotonAtrasButton,
+              id=wxID_MENUPASEADORBOTONATRAS)
 
         self.staticBox1 = wx.StaticBox(id=wxID_MENUPASEADORSTATICBOX1,
               label=u'Modificar Paseador', name='staticBox1',
@@ -129,10 +131,14 @@ class MenuPaseador(wx.Dialog):
         self.BotonAtras2 = wx.Button(id=wxID_MENUPASEADORBOTONATRAS2,
               label=u'Atras', name=u'BotonAtras2', parent=self.panel2,
               pos=wx.Point(24, 392), size=wx.Size(75, 23), style=0)
+        self.BotonAtras2.Bind(wx.EVT_BUTTON, self.OnBotonAtras2Button,
+              id=wxID_MENUPASEADORBOTONATRAS2)
 
         self.botonModificar = wx.Button(id=wxID_MENUPASEADORBOTONMODIFICAR,
               label=u'Modificar', name=u'botonModificar', parent=self.panel2,
               pos=wx.Point(368, 312), size=wx.Size(75, 23), style=0)
+        self.botonModificar.Bind(wx.EVT_BUTTON, self.OnBotonModificarButton,
+              id=wxID_MENUPASEADORBOTONMODIFICAR)
 
         self.textCtrlModNomP = wx.TextCtrl(id=wxID_MENUPASEADORTEXTCTRLMODNOMP,
               name=u'textCtrlModNomP', parent=self.panel2, pos=wx.Point(168,
